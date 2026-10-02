@@ -4,6 +4,33 @@ Interfaz gráfica para la luz cálida de [gammastep](https://gitlab.freedesktop.
 
 ![ventana](doc/screenshot.png)
 
+## Relación con gammastep
+
+Este proyecto **no es un fork** de gammastep ni incluye nada de su código
+fuente. Es una obra independiente que lo usa como **dependencia en tiempo de
+ejecución**.
+
+| | |
+|---|---|
+| Proyecto | gammastep-control (este repositorio) |
+| Proyecto del que depende | [gammastep](https://gitlab.freedesktop.org/CameronNemo/gammastep) |
+| Autoría de gammastep | Escrito por Jon Lund Steffensen, mantenido por Cameron Nemo |
+| Naturaleza de la dependencia | Tiempo de ejecución: proceso externo |
+| Código compartido | Ninguno |
+| Licencia | GPL-3.0 en ambos lados, por tanto compatible |
+
+De gammastep se usa únicamente su interfaz pública: el formato de
+`~/.config/gammastep/config.ini` y las opciones de línea de órdenes
+(`gammastep -o -P -O`). Ni se modifica ni se redistribute nada del proyecto
+original. El icono `gammastep` que aparece en el menú de aplicaciones
+pertenece al paquete de gammastep, no a este repositorio.
+
+Esos puntos son también los puntos de acoplamiento: si gammastep cambia el
+formato de su archivo de configuración o renombra el ejecutable o el
+indicador, esta app tendrá que actualizarse. Para seguir el estado del
+proyecto original: [gitlab.freedesktop.org/CameronNemo/gammastep](https://gitlab.freedesktop.org/CameronNemo/gammastep)
+(derivado a su vez de [redshift](https://github.com/jonls/redshift)).
+
 ## Por qué existe
 
 El indicador de gammastep que viene en la barra de paneles ya no incluye un
