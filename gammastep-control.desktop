@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Gammastep Control
+Name[es]=Luz cálida (Gammastep)
+GenericName=Adjust warm light
+Comment=Adjust gammastep's warm light temperature
+Comment[es]=Ajusta la temperatura de luz cálida de gammastep
+Exec=@EXEC@
+Icon=gammastep
+Terminal=false
+Categories=Settings;
+Keywords=gammastep;light;warm;blue;filter;temperature;gamma;eyes;
+StartupNotify=true
